@@ -114,15 +114,8 @@ export function PricingPlansSection() {
                 </span>
               ) : null}
               <h3 className={cn("text-xl font-black text-ink", plan.popular ? "pr-28" : "")}>{plan.name}</h3>
-              <div className="mt-5 flex items-end gap-1">
-                {plan.price > 0 ? (
-                  <>
-                    <span className="text-4xl font-black text-ink">${plan.price}</span>
-                    <span className="pb-1 text-sm font-semibold text-slate-500">/week</span>
-                  </>
-                ) : (
-                  <span className="text-xl font-black text-ink sm:text-2xl">Price depends on category</span>
-                )}
+              <div className="mt-5">
+                <span className="text-xl font-black text-ink sm:text-2xl">Application</span>
               </div>
               <ul className="mt-6 flex-1 space-y-3">
                 {plan.features.map((feature) => (
