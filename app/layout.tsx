@@ -6,20 +6,31 @@ import { Providers } from "@/components/Providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://sub-lift.vercel.app"),
+
   verification: {
     google: "Hq4XdXriSFiBdeg-sx6jsPDN8bVkkl3terWre7OrdhQ",
   },
+
   title: {
     default: "SubLift - Organic Subreddit Growth",
     template: "%s | SubLift",
   },
+
   description:
-    "Apply for realistic subreddit growth strategy, pay securely, and track progress from a client dashboard.",
+    "Learn how to grow a subreddit with proven community growth strategies. Discover subreddit promotion, engagement tips, moderation best practices, and organic Reddit growth methods.",
+
+  alternates: {
+    canonical: "https://sub-lift.vercel.app",
+  },
+
   openGraph: {
     title: "SubLift - Organic Subreddit Growth",
     description:
-      "Strategy-led subreddit growth services for teams building durable communities.",
+      "Learn how to grow a subreddit with proven community growth strategies. Discover subreddit promotion, engagement tips, moderation best practices, and organic Reddit growth methods.",
     type: "website",
+    siteName: "SubLift",
+    url: "https://sub-lift.vercel.app",
   },
 };
 
