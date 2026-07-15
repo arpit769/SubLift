@@ -6,15 +6,15 @@ import { cn } from "@/lib/utils";
 const snapshots = [
   {
     name: "Private Productivity Community",
-    members: "16,592",
-    weeklyVisits: "127K",
-    weeklyContributions: "4.6K",
+    members: "41,592",
+    weeklyVisits: "487K",
+    weeklyContributions: "22.6K",
     progress: 83,
     bars: [44, 56, 48, 72, 64, 88, 108]
   },
   {
     name: "Private Smart Shopping Community",
-    members: "12,820",
+    members: "27,820",
     weeklyVisits: "82K",
     weeklyContributions: "1.2K",
     progress: 85,
