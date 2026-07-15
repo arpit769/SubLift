@@ -24,11 +24,12 @@ export default function HomePage() {
     <>
       <Nav />
       <main>
-        <section className="relative overflow-hidden bg-white">
-          <div className="absolute inset-x-0 top-0 h-96 bg-[radial-gradient(circle_at_20%_20%,rgba(18,184,166,0.18),transparent_32%),radial-gradient(circle_at_80%_10%,rgba(255,107,95,0.18),transparent_28%)]" />
+        <section className="relative overflow-hidden bg-[linear-gradient(180deg,#ffffff_0%,#f6f8fb_100%)]">
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(15,23,42,0.045)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.045)_1px,transparent_1px)] bg-[size:44px_44px]" />
+          <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white to-transparent" />
           <div className="relative mx-auto grid min-h-[calc(100vh-4rem)] max-w-7xl items-center gap-10 px-4 py-10 sm:px-6 sm:py-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 lg:px-8 lg:py-16">
             <div>
-              <p className="inline-flex rounded-full bg-teal/10 px-4 py-2 text-sm font-bold text-teal">Organic subreddit strategy, tracked weekly</p>
+              <p className="inline-flex rounded-full border border-teal/20 bg-teal/10 px-4 py-2 text-sm font-bold text-teal">Organic subreddit strategy, tracked weekly</p>
               <h1 className="mt-5 max-w-4xl text-4xl font-black leading-[1.02] tracking-normal text-ink sm:mt-6 sm:text-6xl lg:text-7xl">
                 Grow Your Subreddit Organically
               </h1>
@@ -58,8 +59,10 @@ export default function HomePage() {
                 [SearchCheck, "Plan", "We review fit, choose a plan, and map realistic reach assumptions."],
                 [LineChart, "Track", "Your dashboard shows orders, weekly traffic, status, and manual progress updates."]
               ].map(([Icon, title, copy]) => (
-                <div key={String(title)} className="rounded-lg border border-slate-200 bg-white p-6">
-                  <Icon className="h-8 w-8 text-teal" />
+                <div key={String(title)} className="rounded-lg border border-slate-200/80 bg-white p-6 shadow-card transition duration-200 hover:-translate-y-0.5 hover:border-teal/30">
+                  <span className="grid h-11 w-11 place-items-center rounded-md bg-teal/10 text-teal">
+                    <Icon className="h-6 w-6" />
+                  </span>
                   <h3 className="mt-5 text-xl font-bold text-ink">{String(title)}</h3>
                   <p className="mt-3 text-sm leading-6 text-slate-600">{String(copy)}</p>
                 </div>
@@ -75,8 +78,10 @@ export default function HomePage() {
             <h2 className="text-3xl font-black text-ink">Testimonials</h2>
             <div className="mt-10 grid gap-5 md:grid-cols-3">
               {testimonials.map((item) => (
-                <figure key={item.name} className="rounded-lg border border-slate-200 bg-white p-6">
-                  <MessagesSquare className="h-7 w-7 text-coral" />
+                <figure key={item.name} className="rounded-lg border border-slate-200/80 bg-white p-6 shadow-card">
+                  <span className="grid h-10 w-10 place-items-center rounded-md bg-coral/10 text-coral">
+                    <MessagesSquare className="h-5 w-5" />
+                  </span>
                   <blockquote className="mt-5 text-slate-700">"{item.quote}"</blockquote>
                   <figcaption className="mt-6 text-sm">
                     <span className="font-bold text-ink">{item.name}</span>
@@ -91,7 +96,7 @@ export default function HomePage() {
         <section id="faq" className="bg-white py-16 sm:py-20">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-black text-ink">FAQ</h2>
-            <div className="mt-8 divide-y divide-slate-200 rounded-lg border border-slate-200 bg-white">
+            <div className="mt-8 divide-y divide-slate-200 rounded-lg border border-slate-200 bg-white shadow-card">
               {faqs.map(([question, answer]) => (
                 <div key={question} className="p-6">
                   <h3 className="font-bold text-ink">{question}</h3>
@@ -112,7 +117,7 @@ export default function HomePage() {
             href={DISCORD_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex w-fit cursor-pointer items-center gap-2 self-center rounded-md border border-slate-200 bg-white px-4 py-2 font-semibold text-ink transition hover:-translate-y-0.5 hover:border-iris hover:text-iris hover:shadow-md md:self-auto"
+            className="inline-flex w-fit cursor-pointer items-center gap-2 self-center rounded-md border border-slate-200 bg-white px-4 py-2 font-semibold text-ink transition hover:-translate-y-0.5 hover:border-iris/50 hover:text-iris hover:shadow-card md:self-auto"
           >
             <svg
               aria-hidden="true"

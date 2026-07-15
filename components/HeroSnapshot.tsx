@@ -35,7 +35,7 @@ export function HeroSnapshot() {
   }, []);
 
   return (
-    <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-soft sm:p-5">
+    <div className="rounded-lg border border-slate-200/80 bg-white/95 p-4 shadow-soft ring-1 ring-white/70 sm:p-5">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="text-sm font-semibold text-slate-500">Live program snapshot</p>
@@ -43,7 +43,7 @@ export function HeroSnapshot() {
             {active.name}
           </p>
         </div>
-        <span className="w-fit rounded-full bg-teal/10 px-3 py-1 text-xs font-bold text-teal">Active</span>
+        <span className="w-fit rounded-full border border-teal/20 bg-teal/10 px-3 py-1 text-xs font-bold text-teal">Active</span>
       </div>
 
       <div className="mt-6 grid gap-3 sm:grid-cols-3">
@@ -52,7 +52,7 @@ export function HeroSnapshot() {
           ["Weekly visits", active.weeklyVisits],
           ["Weekly contributions", active.weeklyContributions]
         ].map(([label, value]) => (
-          <div key={label} className="rounded-md bg-cloud p-4">
+          <div key={label} className="rounded-md border border-slate-200/70 bg-cloud p-4">
             <p className="text-xs font-bold uppercase tracking-wide text-slate-500">{label}</p>
             <p className="mt-2 text-xl font-black text-ink sm:text-2xl">{value}</p>
           </div>
@@ -64,7 +64,7 @@ export function HeroSnapshot() {
           <span>Subscriber goal</span>
           <span>{active.progress}%</span>
         </div>
-        <div className="h-3 overflow-hidden rounded-full bg-slate-100">
+        <div className="h-3 overflow-hidden rounded-full bg-slate-100 ring-1 ring-slate-200/80">
           <div
             className="h-full rounded-full bg-gradient-to-r from-teal via-iris to-coral transition-all duration-700"
             style={{ width: `${active.progress}%` }}
@@ -76,7 +76,7 @@ export function HeroSnapshot() {
         {active.bars.map((height, index) => (
           <div
             key={`${active.name}-${index}`}
-            className="rounded-t-md bg-ink/85 transition-all duration-700"
+            className="rounded-t-md bg-gradient-to-t from-ink to-iris transition-all duration-700"
             style={{ height: Math.max(36, height) }}
           />
         ))}
@@ -90,7 +90,7 @@ export function HeroSnapshot() {
             onClick={() => setActiveIndex(index)}
             className={cn(
               "h-2.5 rounded-full transition-all",
-              index === activeIndex ? "w-7 bg-ink" : "w-2.5 bg-slate-300 hover:bg-slate-400"
+              index === activeIndex ? "w-7 bg-iris" : "w-2.5 bg-slate-300 hover:bg-slate-400"
             )}
             aria-label={`Show ${snapshot.name}`}
           />

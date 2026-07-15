@@ -87,7 +87,7 @@ export function PricingPlansSection() {
     <section id="pricing" className="bg-white py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="inline-flex items-center gap-2 rounded-full bg-teal/10 px-4 py-2 text-sm font-bold text-teal">
+          <p className="inline-flex items-center gap-2 rounded-full border border-teal/20 bg-teal/10 px-4 py-2 text-sm font-bold text-teal">
             <Sparkles size={16} />
             100% organic weekly plans
           </p>
@@ -104,12 +104,12 @@ export function PricingPlansSection() {
             <article
               key={plan.name}
               className={cn(
-                "relative flex min-h-[330px] flex-col rounded-xl border bg-white p-6 shadow-md transition duration-200 hover:-translate-y-1 hover:shadow-soft",
-                plan.popular ? "border-iris ring-2 ring-iris/15" : "border-slate-200"
+                "relative flex min-h-[330px] flex-col rounded-lg border bg-white p-6 shadow-card transition duration-200 hover:-translate-y-1 hover:border-iris/40 hover:shadow-soft",
+                plan.popular ? "border-iris ring-2 ring-iris/15" : "border-slate-200/80"
               )}
             >
               {plan.popular ? (
-                <span className="absolute right-5 top-5 rounded-full bg-iris px-3 py-1 text-xs font-black uppercase tracking-wide text-white">
+                <span className="absolute right-5 top-5 rounded-full bg-iris px-3 py-1 text-xs font-black uppercase tracking-wide text-white shadow-card">
                   Most Popular
                 </span>
               ) : null}
@@ -131,7 +131,7 @@ export function PricingPlansSection() {
                 rel="noreferrer"
                 className={cn(
                   "mt-7 inline-flex h-11 w-full cursor-pointer items-center justify-center rounded-md px-5 text-sm font-semibold text-white shadow-soft transition hover:-translate-y-0.5",
-                  plan.popular ? "bg-iris hover:bg-[#4f49e8]" : "bg-ink hover:bg-black"
+                  plan.popular ? "bg-iris hover:bg-blue-700" : "bg-ink hover:bg-slate-950"
                 )}
               >
                 Get Started
@@ -163,7 +163,7 @@ export function PricingPlansSection() {
           />
         </div>
 
-        <div className="mt-5 rounded-xl border border-slate-200 bg-cloud p-6 text-center shadow-sm">
+        <div className="mt-5 rounded-lg border border-slate-200 bg-cloud p-6 text-center shadow-card">
           <h3 className="text-lg font-black text-ink">Expectation Setting</h3>
           <p className="mx-auto mt-2 max-w-3xl text-sm leading-6 text-slate-600">
             Most subreddits see noticeable growth within the first few weeks. However, exact traffic and engagement depend on niche and execution.
@@ -179,7 +179,7 @@ export function PricingPlansSection() {
 
 function InfoPanel({ icon, title, body }: { icon: React.ReactNode; title: string; body: string }) {
   return (
-    <article className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+    <article className="rounded-lg border border-slate-200/80 bg-white p-6 shadow-card">
       <div className="flex items-start gap-4">
         <span className="grid h-11 w-11 flex-none place-items-center rounded-md bg-teal/10 text-teal">
           {icon}

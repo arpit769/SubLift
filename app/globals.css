@@ -6,22 +6,82 @@
   color-scheme: light;
 }
 
+.dark {
+  color-scheme: dark;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: #f7f9fc;
-  color: #101828;
+  background: #f6f8fb;
+  color: #0f172a;
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+.dark body {
+  background: #060b16;
+  color: #e5e7eb;
 }
 
 ::selection {
-  background: rgba(18, 184, 166, 0.24);
+  background: rgba(15, 159, 110, 0.22);
 }
 
 .glass {
   background: rgba(255, 255, 255, 0.82);
   backdrop-filter: blur(18px);
+}
+
+.dark .bg-white,
+.dark .bg-white\/92,
+.dark .bg-white\/95,
+.dark .bg-white\/96 {
+  background-color: rgba(15, 23, 42, 0.94);
+}
+
+.dark .bg-cloud,
+.dark .bg-\[linear-gradient\(180deg\2c \#ffffff_0\%\2c \#f6f8fb_100\%\)\] {
+  background-color: #0b1220;
+  background-image: none;
+}
+
+.dark .text-ink,
+.dark .text-slate-700,
+.dark .text-slate-600 {
+  color: #e5e7eb;
+}
+
+.dark .text-slate-500 {
+  color: #94a3b8;
+}
+
+.dark .border-slate-200,
+.dark .border-slate-200\/70,
+.dark .border-slate-200\/80,
+.dark .divide-slate-200 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgba(71, 85, 105, 0.68);
+}
+
+.dark .bg-slate-100 {
+  background-color: #1e293b;
+}
+
+.dark .bg-slate-300 {
+  background-color: #475569;
+}
+
+.dark .ring-slate-200,
+.dark .ring-slate-200\/80 {
+  --tw-ring-color: rgba(71, 85, 105, 0.72);
+}
+
+.dark .shadow-card,
+.dark .shadow-soft,
+.dark .shadow-md,
+.dark .shadow-sm {
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.34);
 }
 
 @keyframes modalIn {

@@ -9,9 +9,9 @@ type BaseProps = {
 };
 
 const styles = {
-  primary: "bg-ink text-white shadow-soft hover:bg-black",
-  secondary: "bg-white text-ink ring-1 ring-slate-200 hover:ring-slate-300",
-  ghost: "text-slate-700 hover:bg-slate-100"
+  primary: "bg-ink text-white shadow-soft hover:-translate-y-0.5 hover:bg-slate-950",
+  secondary: "bg-white text-ink ring-1 ring-slate-200 hover:-translate-y-0.5 hover:ring-iris/40 hover:shadow-card",
+  ghost: "text-slate-700 hover:bg-slate-100 hover:text-ink"
 };
 
 export function Button({
