@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://sub-lift.vercel.app/sitemap.xml',
+    sitemap: 'https://growmysub.com/sitemap.xml',
   }
 }
