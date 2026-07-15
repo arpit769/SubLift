@@ -1,4 +1,4 @@
-# SubLift - Subreddit Growth SaaS
+# GrowMySub - Subreddit Growth SaaS
 
 A production-ready Next.js App Router landing site for an organic subreddit growth service. Visitors can review plans and submit inquiries through an external Google Form.
 

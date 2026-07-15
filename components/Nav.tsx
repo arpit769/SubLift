@@ -21,7 +21,7 @@ export function Nav() {
             <span className="grid h-9 w-9 place-items-center rounded-md bg-ink text-white">
               <BarChart3 size={19} />
             </span>
-            SubLift
+            GrowMySub
           </Link>
         <nav className="hidden items-center gap-7 text-sm font-medium text-slate-600 md:flex">
           <Link href="/#how">How it works</Link>

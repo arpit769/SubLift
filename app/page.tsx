@@ -105,7 +105,7 @@ export default function HomePage() {
       <footer className="border-t border-slate-200 bg-white py-8">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 px-4 text-sm text-slate-500 sm:px-6 md:flex-row md:items-center lg:px-8">
           <div className="text-center md:text-left">
-            <span className="font-semibold text-ink">SubLift</span>
+            <span className="font-semibold text-ink">GrowMySub</span>
             <span className="mt-1 block">Organic growth strategy for subreddit communities.</span>
           </div>
           <a

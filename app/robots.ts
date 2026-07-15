@@ -8,7 +8,6 @@ export default function robots(): MetadataRoute.Robots {
     },
     sitemap: [
       'https://growmysub.com/sitemap.xml',
-      'https://sub-lift.vercel.app/sitemap.xml',
     ],
   }
 }
