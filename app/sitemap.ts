@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://sub-lift.vercel.app',
+      url: 'https://growmysub.com',
       lastModified: new Date(),
     },
   ]
